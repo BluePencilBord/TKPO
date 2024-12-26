@@ -1,0 +1,10 @@
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\bin\Debug\tkpo_lab6.exe.config
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\bin\Debug\tkpo_lab6.exe
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\bin\Debug\tkpo_lab6.pdb
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.csproj.AssemblyReference.cache
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.Form1.resources
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.Properties.Resources.resources
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.csproj.GenerateResource.cache
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.csproj.CoreCompileInputs.cache
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.exe
+C:\Users\thedude\source\repos\tkpo_lab6\tkpo_lab6\obj\Debug\tkpo_lab6.pdb
