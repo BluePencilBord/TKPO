@@ -1,0 +1,40 @@
+@startuml
+abstract class Property {
+    + int InsuranceTerm
+    + double Area
+    + int ResidentsCount
+    + int YearBuilt
+    + double WearPercent
+    + double GetPropertyTypeMultiplier()
+}
+
+class Apartment extends Property {
+    + GetPropertyTypeMultiplier() : double
+}
+
+class Townhouse extends Property {
+    + GetPropertyTypeMultiplier() : double
+}
+
+class Cottage extends Property {
+    + GetPropertyTypeMultiplier() : double
+}
+
+class BaseInsuranceCalculator {
+    + CalculateBasePremium(double area, int yearBuilt, double wearPercent) : double
+}
+
+class ResidentsDiscount {
+    + CalculateDiscount(int residentsCount) : double
+}
+
+class InsuranceFacade {
+    - BaseInsuranceCalculator baseCalculator
+    - ResidentsDiscount residentsDiscount
+    + CalculateInsurancePremium(Property property) : double
+}
+
+InsuranceFacade --> BaseInsuranceCalculator
+InsuranceFacade --> ResidentsDiscount
+InsuranceFacade --> Property
+@enduml
