@@ -1,0 +1,22 @@
+@startuml
+actor Пользователь
+participant Студент as Student
+participant Преподаватель as Teacher
+participant ЗаведующийКафедрой as HeadOfDepartment
+
+Пользователь -> Student : Создает студента
+Student -> Student : Устанавливает имя и группу
+Пользователь -> Teacher : Создает преподавателя
+Teacher -> Teacher : Устанавливает имя и предмет
+Пользователь -> HeadOfDepartment : Создает заведующего кафедрой
+HeadOfDepartment -> HeadOfDepartment : Устанавливает имя и кафедру
+
+Пользователь -> Student : Вызывает DisplayRole()
+Student -> Пользователь : Возвращает роль студента
+
+Пользователь -> Teacher : Вызывает DisplayRole()
+Teacher -> Пользователь : Возвращает роль преподавателя
+
+Пользователь -> HeadOfDepartment : Вызывает DisplayRole()
+HeadOfDepartment -> Пользователь : Возвращает роль заведующего кафедрой
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+actor Пользователь
+participant Курс as Course
+participant Преподаватель as Teacher
+participant Студент as Student
+participant Архив as Archive
+
+Пользователь -> Course : Создает курс
+Пользователь -> Teacher : Создает преподавателя
+Пользователь -> Course : Добавляет преподавателя на курс
+Пользователь -> Student : Создает студента
+Student -> Course : Записывается на курс
+
+Teacher -> Course : Проверяет, назначен ли на курс
+Course -> Teacher : Возвращает статус
+Teacher -> Course : Проверяет, записан ли студент
+Course -> Teacher : Возвращает статус
+Teacher -> Archive : Сохраняет оценку
+
+Пользователь -> Archive : Просматривает архив
+Archive -> Пользователь : Возвращает данные об оценках
+@enduml

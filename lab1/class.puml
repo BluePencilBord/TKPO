@@ -1,0 +1,44 @@
+@startuml
+class Course {
+    - string Name
+    - List<Teacher> teachers
+    - List<Student> students
+    + Course(string name)
+    + void AddTeacher(Teacher teacher)
+    + void AddStudent(Student student)
+    + List<Teacher> GetTeachers()
+    + List<Student> GetStudents()
+}
+
+class Teacher {
+    - string Name
+    + Teacher(string name)
+    + void GradeStudent(Course course, Student student, int grade, Archive archive)
+}
+
+class Student {
+    - string Name
+    + Student(string name)
+    + void Enroll(Course course)
+}
+
+class Grade {
+    - Teacher Teacher
+    - Student Student
+    - int Value
+    + Grade(Teacher teacher, Student student, int value)
+}
+
+class Archive {
+    - List<(Course, Student, Grade)> records
+    + Archive()
+    + void SaveGrade(Course course, Student student, Grade grade)
+    + void ShowArchive()
+}
+
+Course "1" --> "*" Student : записаны
+Course "1" --> "*" Teacher : назначены
+Teacher "1" --> "*" Grade : выставляет
+Student "1" --> "*" Grade : получает
+Archive "1" --> "*" Grade : хранит
+@enduml

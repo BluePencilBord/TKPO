@@ -1,0 +1,35 @@
+@startuml
+abstract class Person {
+    - string Name
+    + Person(string name)
+    + void DisplayRole()
+}
+
+interface IUniversityEmployee {
+    + void PerformDuties()
+}
+
+class Student {
+    - string Group
+    + Student(string name, string group)
+    + void Study()
+}
+
+class Teacher {
+    - string Subject
+    + Teacher(string name, string subject)
+    + void PerformDuties()
+}
+
+class HeadOfDepartment {
+    - string Department
+    + HeadOfDepartment(string name, string department)
+    + void PerformDuties()
+}
+
+Person <|-- Student
+Person <|-- Teacher
+Person <|-- HeadOfDepartment
+IUniversityEmployee <|.. Teacher
+IUniversityEmployee <|.. HeadOfDepartment
+@enduml

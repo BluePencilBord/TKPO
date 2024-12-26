@@ -1,0 +1,28 @@
+@startuml
+interface ITetrisFigure {
+    + void Display()
+    + void Display1()
+}
+
+class Square implements ITetrisFigure
+class Line implements ITetrisFigure
+class TShape implements ITetrisFigure
+class SuperSquare implements ITetrisFigure
+class SuperLine implements ITetrisFigure
+
+abstract class TetrisFigureCreator {
+    + ITetrisFigure FactoryMethod()
+}
+
+class SquareCreator extends TetrisFigureCreator
+class LineCreator extends TetrisFigureCreator
+class TShapeCreator extends TetrisFigureCreator
+class SuperSquareCreator extends TetrisFigureCreator
+class SuperLineCreator extends TetrisFigureCreator
+
+class TetrisGame {
+    + ITetrisFigure GetRandomFigure()
+}
+
+TetrisGame ..> TetrisFigureCreator : uses
+@enduml

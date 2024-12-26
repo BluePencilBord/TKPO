@@ -1,0 +1,15 @@
+@startuml
+actor Пользователь
+participant TetrisGame
+participant TetrisFigureCreator
+participant ITetrisFigure
+
+Пользователь -> TetrisGame : GetRandomFigure()
+TetrisGame -> TetrisFigureCreator : FactoryMethod()
+TetrisFigureCreator -> ITetrisFigure : Создает фигуру
+ITetrisFigure --> TetrisFigureCreator : Объект фигуры
+TetrisFigureCreator --> TetrisGame : Возвращает фигуру
+TetrisGame --> Пользователь : Возвращает фигуру
+
+Пользователь -> ITetrisFigure : Display()
+@enduml

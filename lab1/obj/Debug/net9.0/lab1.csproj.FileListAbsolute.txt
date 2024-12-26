@@ -1,0 +1,14 @@
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\bin\Debug\net9.0\lab1.exe
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\bin\Debug\net9.0\lab1.deps.json
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\bin\Debug\net9.0\lab1.runtimeconfig.json
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\bin\Debug\net9.0\lab1.dll
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\bin\Debug\net9.0\lab1.pdb
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.AssemblyInfoInputs.cache
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.AssemblyInfo.cs
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.csproj.CoreCompileInputs.cache
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.dll
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\refint\lab1.dll
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.pdb
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\lab1.genruntimeconfig.cache
+C:\Users\thedude\Desktop\Study Garbage\ТКПО\lab1\obj\Debug\net9.0\ref\lab1.dll
